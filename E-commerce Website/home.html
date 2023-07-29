@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="./Style.CSS">
+	<style>
+
+		/* CSS PORTION FOR THE CONTENT OF THIS PAGE */
+		/* IMAGE SLIDER */
+		.image-slider img{
+			width: 100%;
+			height: 25em;
+			margin-top: -1em;
+		}
+
+		/* OUTER BOX FOR AD */
+		.ad-outer{
+			display: flex;
+			justify-content: center;
+		}
+
+		/* LEFT PORTION OF AD */
+		.ad-outer .ad-left{
+			margin-right: 2em;
+		}
+
+		/* IMAGE IN THE AD */
+		.ad-outer img{
+			width: 100%;
+			height: 90%;
+			padding-right: 3em;;
+		}
+
+		/* CSS FOR BRAND PARTNER SECTION */
+		.brand-partners{
+			margin: 0em 3em;
+		}
+
+		/* BRANDS */
+		.brands{
+			display: flex;
+		}
+
+		/* BRAND LOGO */
+		.brand-logo img{
+			height: 6em;
+			width: 8em;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<!-- company logo and navigation bar -->
+		<div class="logo">
+			<img src="./Logo/logo.png">
+		</div>
+		<!-- NAV BAR -->
+		<div class="nav">
+			<nav>
+				<a href="./home.html">Home</a>
+				<a href="./Products.html">Products</a>
+				<a href="./Blog.html">Blog</a>
+				<a href="./Research.html">Research</a>
+				<a href="./ContactUs.html">Contact US</a>
+			</nav>
+		</div>
+		
+	</header>
+
+	<div class="content">
+		<!-- content -->
+		<!-- IMG SLIDER -->
+		<div class="image-slider" onclick="sldr()">
+			<img src="./Image slider/apple-091217-iphone-x-3986-1.webp" id="sldr1"  alt="" >
+			<img src="./Image slider/slider 1.png" id="sldr2" alt="" style="display: none;" >
+		</div>
+		<!-- OUTER AD -->
+		<div class="ad-outer">
+			<div class="ad-left">
+				<img src="./Image slider/slider 2.webp" alt="">
+			</div>
+			<div class="ad-right">
+				<p> On September 14, the iPhone 13 was introduced, featuring a slew of new features. The upgrade provides design modifications, camera enhancements, and much more year after year. Continue reading to learn everything there is to know about the iPhone 13, including naming specifics, the reduced notch, and more.</p>
+				<p>The iPhone 13 and iPhone 13 mini have a "huge breakthrough in camera design," according to Apple, with a new Wide camera that captures 47% more light for less noise and brighter shots.
+					These aren't inexpensive phones, but you can save money with Apple's and cellular carriers' trade-in offers, and there are lots of discounts available.</p>
+		    </div>
+		</div>
+		<!-- OUTER AD -->
+		<div class="ad-outer">
+			<div class="ad-left">
+				<p>The Samsung Galaxy S8 and Samsung Galaxy S8+ are Android smartphones produced by Samsung Electronics as the eighth generation of the Samsung Galaxy S series. The S8 and S8+ were unveiled on 29 March 2017 and directly succeeded the Samsung Galaxy S7 and S7 Edge, with a North American release on 21 April 2017 and international rollout throughout April and May. The Samsung Galaxy S8 Active was announced on 8 August 2017 and is exclusive to certain U.S. cellular carriers.</p>
+				<p></p>
+			</div>
+			<div class="ad-right">
+				<img src="./ads/ad-1.webp" alt="">
+			</div>
+		</div>
+		<!-- BRAND PARTHERS -->
+		<div class="brand-partners">
+			<div class="brandtext">
+				<center> <h3>Brand Partners</h3> </center>
+			</div>
+			</div>
+			<!-- `BRANDS -->
+			<div class="brands">
+				<div class="brand-logo">
+					<img src="./brand-logo/apple-logo.jpg" alt="logo of apple">
+				</div>
+
+				<div class="brand-logo">
+					<img src="./brand-logo/87003.png" alt="logo of MI">
+				</div>
+
+				<div class="brand-logo">
+					<img src="./brand-logo/c3bca9e199ee06075fe7aa9e400a133f.jpg" alt="logo of nokia">
+					
+				</div>
+
+				<div class="brand-logo">
+					<img src="./brand-logo/Huawei-logo.jpg" alt="logo of Huawei">
+					
+				</div>
+
+				<div class="brand-logo">
+					<img src="./brand-logo/oppo-logo.webp" alt="logo of oppo">
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<hr>
+
+	<footer>
+		<!-- copyright -->
+		<center>&copy; All rights reserved</center>
+		<p class="abt-us"><center> The Rose Store opened in 2010 with the goal of making all smart phones widely accessible to anyone in Nepal. We are now available in a variety of mobile phone brands, including Apple, Oppo, Redmi, Nokia, and many others!!!</center></p><br><br>
+	</footer>
+
+	<script>
+		// JS FOR SLIDER
+
+	var a = true;
+	function sldr(){
+		if (a == true){
+			document.getElementById('sldr1').style.display = 'none';
+			document.getElementById('sldr2').style.display = 'block';
+			a = false;
+		}else{
+			document.getElementById('sldr1').style.display = 'block';
+			document.getElementById('sldr2').style.display = 'none';
+			a = true;
+		}
+	}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Products | Rose Phone Store</title>
+	<link rel="stylesheet" type="text/css"  href="./Style.CSS">
+	<style>
+	 /*SMALL BOX  */
+	.small-container{
+		margin: 3em;
+	}
+
+	/* ROW FOR PRODUCTS */
+	.row{
+		display: flex;
+	}
+	/* COLS OF PRODUCTS */
+	.col-4 img{
+		height: 13em;
+		width: 12em;
+		
+	}
+
+	/* COLUMNS */
+	.col-4{
+		margin: .5em;
+		padding: .5em;
+	}
+
+	/* HOVER EFFECT FOR COLS */
+	.col-4:hover{
+		box-shadow: 0em 0em .3em;
+	}
+
+	</style>
+</head> 
+
+<body>
+
+	<header>
+		<!-- company logo and navigation bar -->
+		<div class="logo">
+			<img src="./Logo/logo.png">
+		</div>
+		<!-- NAV BAR -->
+		<div class="nav">
+			<nav>
+				<a href="./home.html">Home</a>
+				<a href="./Products.html">Products</a>
+				<a href="./Blog.html">Blog</a>
+				<a href="./Research.html">Research</a>
+				<a href="./ContactUs.html">Contact US</a>
+			</nav>
+		</div>
+		
+	</header>
+
+	<div class="small-container">
+		<!-- APPLE -->
+		<h2>Apple</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="./Product photos/iphone 11.webp">
+				<h3>Apple iphone 11 </h3>
+				<p>Rs.86,900</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/iphone 12.jpg">
+				<h3>Apple iphone 12</h3>
+				<p>Rs.90,900</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+
+			<div class="col-4">
+				<img src="./Product photos/iphone 13 black.jpg">
+				<h3>Apple iphone13-Black</h3>
+			     <p>Rs.139,990</p>
+				 <button type="button" onclick="but()">Buy</button>
+	    	</div>
+	    	<div class="col-4">
+				<img src="./Product photos/iphone 13 mini.jpg">
+				<h3>Apple iphone13-Mini</h3>
+				<p>Rs.173,990</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/iphone 13 pro max.jpg">
+				<h3>Apple iphone13 Pro Max</h3>
+				<p>Rs.191,990</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+		</div>
+		<!-- HUAWEI -->
+		<h2>Huawei</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="./Product photos/hu nova 3i.jpg">
+				<h3>Huawei Nova 2i</h3>
+				<p>Rs.30,900</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/hu p30 pro.jpg">
+				<h3>Huawei P30 Pro</h3>
+				<p>Rs.84,900</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/huawei nova 7i.jpg">
+				<h3>Huawei Nova 7i </h3>
+				<p>Rs.41,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/huawei p30.jpg">
+				<h3>Huawei P30</h3>
+				<p>Rs.84,900</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/hu p40.jpg"><br>
+				<h3>Huawei P40</h3>
+				<p>Rs.127,912</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+		</div>
+		<!-- NOKIA -->
+		<h2>Nokia</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="./Product photos/nokia c10.jpg">
+				<h3>Nokia C10</h3>
+				<p>Rs.10,925</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/nokia c20.jpg">
+				<h3>Nokia C20</h3>
+				<p>Rs.10,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+
+			<div class="col-4">
+				<img src="./Product photos/nokia c30.jpg">
+				<h3>Nokia C30</h3>
+				<p>Rs.12,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/nokia 7.jpg">
+				<h3>Nokia 7 </h3>
+				<p>Rs.30,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			
+			<div class="col-4">
+				<img src="./Product photos/nokia 9.jpg">
+				<h3>Nokia 9 </h3>
+				<p>Rs.48,900</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+		</div>
+		<h2>Oppo</h2>
+
+		<div class="row">
+			<div class="col-4">
+				<img src="./Product photos/oppo F17.jpg">
+				<h3>Oppo F17</h3>
+				<p>Rs.37,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/oppo-f17-pro-1.jpg">
+				<h3>Oppo F17 Pro </h3>
+				<p>Rs.33,990</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/Oppo-F9.jpg">
+				<h3>Oppo-F9</h3>
+		         <p>Rs.44,500</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/Oppo-F11-Pro.jpg">
+				<h3>Oppo F11 Pro  </h3>
+				<p>Rs.54,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/oppo renno 3.jpg">
+				<h3>Oppo Reno 3</h3>
+				<p>Rs.46,990</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+		</div>
+		<!-- SAMSUNG -->
+		<h2>Samsung</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="./Product photos/sam A53.jpg">
+				<h3>Samsung A53</h3>
+				<p>Rs.55,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/sam F22.jpg">
+				<h3>Samsung F22</h3>
+				<p>Rs.23,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/sam M21.jpg">
+				<h3>Samsung M2</h3>
+				<p>Rs.22,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/sam S8.jpg">
+				<h3>Samsung S8 </h3>
+				<p>Rs.86,900</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/sam s8 plus.jpg">
+				<h3>Samsung S8 plus</h3>
+				<p>Rs.90,900</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			
+		</div>
+		MI
+		<h2>Mi</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="./Product photos/redmi 9i.jpg">
+				<h3>Redmi 9i</h3>
+				<p>Rs.13,730</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/redmi note8.jpg">
+				<h3>Redmi Note 8</h3>
+				<p>Rs.19,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/redmi note10.jpg">
+				<h3>Redmi Note10</h3>
+				<p>Rs.22,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/redmi note 9.jpg">
+				<h3>Redmi Note 9</h3>
+				<p>Rs.23,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+			<div class="col-4">
+				<img src="./Product photos/redmi note  11 pro.jpg">
+				<h3>Redmi Note 11 pro</h3>s
+				<p>Rs.23,999</p>
+				<button type="button" onclick="but()">Buy</button>
+			</div>
+		</div>
+		
+
+						
+
+
+		</div>
+		</div>
+	</div>
+		
+		
+	</div>
+
+	<footer>
+		<!-- copyright -->
+		<center>&copy; All rights reserved</center>
+		
+	</footer>
+	<script src="./style.js">
+	</script>
+	
+	
+
+</body>
+</html>

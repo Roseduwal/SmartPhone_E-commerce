@@ -1,0 +1,54 @@
+/* CSS FOR BODY PORTION */
+body{
+    margin: 3em;
+}
+
+/* CSS FOR HEADER */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202 187 170);
+    margin-top: -3em;
+}
+
+/* CSS FOE LOGO */
+header img{
+    height: 7em;
+    margin-right: 7em;
+}
+
+/* CSS FOR NAV BAR */
+header nav{
+    margin-top: 3em;
+    text-align: right;
+    flex: 1;
+    
+}
+
+/* CSS FOR NAV LINKS */
+header nav a{
+    margin-left: 2em;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
+
+/* HOVER EFFECT FOR LINKS */
+header nav a:hover{
+    color: rgb(20, 86, 51);
+}
+
+/* CSS FOR CONTENT */
+.content{
+    margin: 1em 2em;
+}
+
+/* CSS FOR FOOTER */
+footer{
+    background-color: rgb(128, 120, 125);
+    margin-bottom: -3em;
+
+}

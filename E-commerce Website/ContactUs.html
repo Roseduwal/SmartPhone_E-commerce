@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="./Style.CSS">
+</head>
+<body>
+	<style>
+		/* CONTENT CSS FLEX */
+		.content{
+			display: flex;
+			justify-content: center;
+			margin-top: 3em;
+		}
+
+		/* LEFT SIDE */
+		.left{
+			margin-right: 5em;
+			border-radius: 2em;
+			box-shadow: 0em 0em 0.5em;
+			padding: 1em;
+			height: 23em;
+			width: 50%;
+			background-image: linear-gradient(rgb(119, 119, 139), skyblue);
+		}
+		/* LEFT COL */
+		.left .row{
+			margin-bottom: 3em;
+
+		}
+		/* RIGHT COL */
+		.right{
+			border: 2px black solid;
+			padding: 0em 2em 1em 2em;
+			border-radius: 1em;
+			width: 100%;
+			background-image: linear-gradient(skyblue ,rgb(119, 119, 139));
+
+		}
+		/* IMPUT BOXES */
+		form input[type = "text"]{
+			width: 100%;
+			border-radius: 1em;
+			height: 1.5em;
+			margin-bottom: 1em;
+		}
+		/* TEXT AREAS */
+		textarea{
+			border-radius: 1em;
+			margin-top: 1em;
+			width: 100%;
+			border: 2px black solid;
+		}
+		/* BUTTONS */
+		.btn-submit{
+			padding: .5em;
+			color: black;
+			font-weight: bold;
+			background-color: green;
+			border-radius: 1em;
+			border: 2px black solid;
+		}
+		/* BTN HOVER */
+		.btn-submit:hover{
+			background-color: darkgreen;
+		}
+		/* WANING */
+		#warning{
+			font-weight: bold;
+			color: red;
+		}
+	
+	</style>
+
+
+<header>
+	<!-- company logo and navigation bar -->
+	<div class="logo">
+		<img src="./Logo/logo.png">
+	</div>
+	<!-- NAV BAR -->
+	<div class="nav">
+		<nav>
+			<a href="./home.html">Home</a>
+			<a href="./Products.html">Products</a>
+			<a href="./Blog.html">Blog</a>
+			<a href="./Research.html">Research</a>
+			<a href="./ContactUs.html">Contact US</a>
+		</nav>
+	</div>
+	
+</header>
+	<!-- CONTENT -->
+	<div class="content">
+		<!-- left -->
+		<div class="left">
+			<!-- CONTACT INFO -->
+			<div class="row">
+				<h3>Location</h3>
+				<span>Boston Street, Kathmandu</span> <br>
+				<span>Nepal</span>
+			</div>
+
+			<div class="row">
+				<h3>Phone Number</h3>
+				<span>01-4635243</span> <br>
+				<span>+977 7264546372</span>
+			</div>
+
+			<div class="row">
+				<h3>Email</h3>
+				<span>info@rose.com.np</span><br>
+				<span>customerservice@rose.com.np</span>
+			</div>
+
+		</div>
+		<!-- FORM -->
+		<div class="right">
+			<h2>Form</h2>
+			<!-- WARNING MESSAGE -->
+			<span id="warning"></span>
+			
+			<form action="Validation" name="contact">
+				<span>Name:</span><br>
+				<input type="text" name="name"> <br>
+				<span>Email:</span> <br>
+				<input type="text" name="email"><br>
+				<span>Gender</span><br>
+				<input type="radio" name="Gender" value="male"> Male
+				<input type="radio" name="Gender" value="female"> Female
+				<input type="radio" name="Gender" value="other"> other <br>
+				<textarea name="message" id="text" cols="30" rows="10"></textarea> <br> <br>
+				<span class = "btn-submit" onclick="submit()">Submit</span>
+
+			</form>
+
+		</div>
+		
+	</div>
+
+	<footer>
+		<!-- copyright -->
+		<center>&copy; All rights reserved</center>
+		
+	</footer>
+
+	<script>
+
+		// FUNCTION FOR Submit
+		function submit(){
+			var name = document.forms['contact']['name'].value;
+			var email = document.forms['contact']['email'].value;
+			var gender = document.forms['contact']['Gender'].value;
+			var msg =  document.forms['contact']['message'].value;
+
+			if(name == "" || email == "" || gender == "" || msg == ""){
+				document.getElementById('warning').innerHTML = "Fill all fields****";
+			}else{
+				alert('your msg has been sent');
+			}
+		}
+	</script>
+
+</body>
+</html>
